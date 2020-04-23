@@ -8,7 +8,7 @@ import (
 	"net"
 	"strconv"
 
-	"layeh.com/radius/dictionary"
+	"github.com/iamwind/radius/dictionary"
 )
 
 type externalAttribute struct {
@@ -239,10 +239,10 @@ func (g *Generator) Generate(dict *dictionary.Dictionary) ([]byte, error) {
 	}
 	if len(attrs) > 0 || len(vendors) > 0 {
 		p(&w)
-		p(&w, `	"layeh.com/radius"`)
+		p(&w, `	"github.com/iamwind/radius"`)
 	}
 	if len(vendors) > 0 {
-		p(&w, `	"layeh.com/radius/rfc2865"`)
+		p(&w, `	"github.com/iamwind/radius/rfc2865"`)
 	}
 	if len(externalAttributes) > 0 {
 		printedNewLine := false

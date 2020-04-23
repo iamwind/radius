@@ -3,7 +3,7 @@
 package rfc5176
 
 import (
-	. "layeh.com/radius/rfc3576"
+	. "github.com/iamwind/radius/rfc3576"
 )
 
 func init() {

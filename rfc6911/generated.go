@@ -5,7 +5,7 @@ package rfc6911
 import (
 	"net"
 
-	"layeh.com/radius"
+	"github.com/iamwind/radius"
 )
 
 const (
